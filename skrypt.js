@@ -57,12 +57,12 @@ function wybieranieMaleL(){
 }
 function wybieranieZnakowSpecjalnych(){
     iloscZnakowSpecjalnych=document.getElementById("iloscZnakowSpecjalnych").value;
-    document.getElementById("wybZnakiSpecjalne").value=iloscMaleL;
+    document.getElementById("wybZnakiSpecjalne").value=iloscZnakowSpecjalnych;
     ustawWolne()
 }
 function wybieranieLiczb(){
     iloscLiczb=document.getElementById("iloscLiczb").value;
-    document.getElementById("wybLiczb").value=iloscMaleL;
+    document.getElementById("wybLiczb").value=iloscLiczb;
     ustawWolne()
 }
 function generujHaslo(){
@@ -90,7 +90,7 @@ function generujHaslo(){
     }
     //losowanie dodatkowych znakow
     for(let i=0;i<iloscWolnychZnakow;i++){
-        haski+=alfabetMale.charAt(Math.floor(Math.random()*alfabetMale.length));
+        haslo+=alfabetMale.charAt(Math.floor(Math.random()*alfabetMale.length));
     }
     
    // let dane=zmianaKolejnosci(haslo);
