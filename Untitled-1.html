@@ -4,39 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generowanie hasła</title>
+    <title>Ciąg fibonaciego</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="skrypt.js"></script>
 </head>
 <body>
-    <div class="container">
-        <p>
-            Podaj ilość znaków
-            <input type="number" min="8" id="iloscZnakow" oninput="iloscZnakow()">
+    <header>
+        <h1>Obliczanie ciągu fibonaciego</h1>
+    </header>
+    <main>
+        <p>Podaj, który wyraz ciągu mamy obliczyć: <input type="number" id="wyraz">
+        <button onclick="oblicz()">Wyznacz</button>
         </p>
-        <p>
-            Podaj ilośc dużych liter
-            <input type="range" value="0" min="0" max="20" id="iloscDuzeL" oninput="wybieranieDuzeL()">
-            <output id="wybDuzeL"></output>
-        </p>
-        <p>
-            Podaj ilośc małych liter
-            <input type="range" value="0" min="0" max="20" id="iloscMaleL" oninput="wybieranieMaleL()">
-            <output id="wybMaleL"></output>
-        </p>
-        <p>
-            Podaj ilośc znakowSpecjalnych
-            <input type="range" value="0" min="0" max="20" id="iloscZnakowSpecjalnych" oninput="wybieranieZnakowSpecjalnych()">
-            <output id="wybZnakiSpecjalne"></output>
-        </p>
-        <p>
-            Podaj ilośc liczb
-            <input type="range" value="0" min="0" max="20" id="iloscLiczb" oninput="wybieranieLiczb()">
-            <output id="wybLiczb"></output>
-        </p>
-        <p><button id="genHaslo" onclick="generujHaslo()">Generuj hasło</button></p>
-        <p>Wygenrowane hasło: <output id="haslo"></output></p>
-    </div>
+        <p><output id="wynik"></output></p>
+    </main>
+    <footer>
+        <p>Stronę wykonała klasa 4Tie</p>
+    </footer>
 </body>
 </html>
